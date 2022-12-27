@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: double.infinity,
                           child: Container(
                             color: Colors.blueAccent,
-                            child: Text("Shogi Board"),
+                            child: Text("Shogi Board (flex値: ${isKeyboardVisible ? 4 : 4}"),
                           ),
                         ),
                       ),
@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     width: double.infinity,
                     child: Container(
                       color: Colors.greenAccent,
-                      child: Text("Kifu Buttons"),
+                      child: Text("Kifu Buttons (flex値: ${isKeyboardVisible ? 1 : 1}"),
                     ),
                   ),
                 ),
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: TextField(
                         controller: chatTextController,
                         decoration:
-                            InputDecoration(hintText: "Chat:押したらキーボード出てくるで"),
+                            InputDecoration(hintText: "Chat:押したらキーボード出てくるで (flex値: ${isKeyboardVisible ? 1 : 3}"),
                       ),
                     ),
                   ),
